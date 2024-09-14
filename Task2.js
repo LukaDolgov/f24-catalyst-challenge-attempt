@@ -26,7 +26,11 @@ todoList = [
 function deleteTodo(index) {
     console.log("Before: " + todoList)
     // YOUR CODE HERE
-    console.log("After:" + todoList)
+    todoList.splice(index, 1)
+    console.log("After: ")
+    todoList.forEach((todo, index) => {
+        console.log(`${index + 1}. ${todo}`);
+})
 }
 
 /**
